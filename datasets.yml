@@ -1,0 +1,100 @@
+catalog: metadata_etl
+schema: bronze
+
+datasets:
+
+  - name: sales
+    source: /Volumes/metadata_etl/default/datasets/sales
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: sales
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: true
+
+  - name: region
+    source: /Volumes/metadata_etl/default/datasets/region
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: region
+
+    transformations:
+      trim: true
+      remove_duplicates: false
+      null_check: false
+
+  - name: city
+    source: /Volumes/metadata_etl/default/datasets/city
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: city
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: false
+
+  - name: customer
+    source: /Volumes/metadata_etl/default/datasets/customer
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: customer
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: true
+
+  - name: product
+    source: /Volumes/metadata_etl/default/datasets/product
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: product
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: false
+
+  - name: vendors
+    source: /Volumes/metadata_etl/default/datasets/vendors
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: vendors
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: true
+
+  - name: payments
+    source: /Volumes/metadata_etl/default/datasets/payments
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: payments
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: true
+
+  - name: shipments
+    source: /Volumes/metadata_etl/default/datasets/shipments
+    format: csv
+    header: true
+    inferSchema: true
+    target_table: shipments
+
+    transformations:
+      trim: true
+      remove_duplicates: true
+      null_check: true
