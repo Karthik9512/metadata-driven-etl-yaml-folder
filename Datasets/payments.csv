@@ -1,0 +1,6 @@
+payment_id,vendor_id,amount,payment_date,payment_method,status
+9001,501,25000,2026-06-10,UPI,Completed
+9002,502,18500,2026-06-12,Bank Transfer,Completed
+9003,503,42000,2026-06-15,Cheque,Pending
+9004,504,31000,2026-06-18,UPI,Completed
+9005,505,15000,2026-06-20,NEFT,Failed

@@ -1,0 +1,6 @@
+shipment_id,vendor_id,destination,shipment_date,carrier,status
+7001,501,Hyderabad,2026-06-11,BlueDart,Delivered
+7002,503,Mumbai,2026-06-13,DTDC,In Transit
+7003,502,Chennai,2026-06-16,Delhivery,Delivered
+7004,505,Delhi,2026-06-19,XpressBees,Pending
+7005,504,Bengaluru,2026-06-21,India Post,Delivered
